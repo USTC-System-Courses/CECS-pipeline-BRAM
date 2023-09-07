@@ -120,6 +120,19 @@ module Decode(
             // wb_rf_sel   = 
             // br_type     = 
         end
+        'h73: begin
+            // CSR instruction
+            // Lab4 TODO: finish CSR instruction decode
+
+            // imm         = 
+            // mem_access  = 
+            // alu_op      = 
+            // rf_we       = 
+            // alu_rs1_sel = 
+            // alu_rs2_sel = 
+            // wb_rf_sel   = 
+            // br_type     = 
+        end
         default: begin
             imm         = 0;
             mem_access  = 0;
@@ -132,5 +145,6 @@ module Decode(
         end
         endcase
     end
+    // Lab4 TODO: you may need to decode for ecall and mret specially here
 
 endmodule

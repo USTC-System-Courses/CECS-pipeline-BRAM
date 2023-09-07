@@ -74,6 +74,8 @@ module Hazard(
 
     // control hazard
     wire flush_by_jump = jump;
+    // Lab4 TODO: generate CSR related flush signal
+    // Lab4 TODO: generate ecall and mret flush signal
 
     // Lab3 TODO: generate pc_set, IF1_IF2_flush, IF2_ID_flush, ID_EX_flush, EX_LS_flush, LS_WB_flush
     // assign pc_set           = 
