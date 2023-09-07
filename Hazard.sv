@@ -25,6 +25,8 @@ module Hazard(
     input  logic [ 0:0] jump,
     input  logic [31:0] jump_target,
 
+    // Lab4 TODO: you may need to add some signals to cope with CSR, ecall and mret
+
     output logic [ 0:0] pc_set,
     output logic [ 0:0] IF1_IF2_flush,
     output logic [ 0:0] IF2_ID_flush,
@@ -98,6 +100,7 @@ module Hazard(
         if (flush_by_jump) begin
             pc_set_target = jump_target;
         end
+        // Lab4 TODO: generate CSR, ecall and mret related pc_set_target
     end
 
 endmodule
