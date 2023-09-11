@@ -27,7 +27,6 @@ module CPU#(
     logic [31:0]    mem_wdata_ex;
     logic [31:0]    mem_rdata_ls, mem_rdata_wb; 
     logic [31:0]    dcache_rdata_ls;
-    logic [31:0]    mepc_global, mtvec_global, mcause_global;
     logic [ 4:0]    alu_op_id, alu_op_ex;
     logic [ 4:0]    mem_access_id, mem_access_ex, mem_access_ls;
     logic [ 4:0]    br_type_id, br_type_ex;
